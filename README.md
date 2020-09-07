@@ -1,2 +1,2 @@
 # Hangman
- Basic game of hangman.
+ Basic game of hangman written in python.
