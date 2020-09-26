@@ -28,7 +28,7 @@ def choose_word():
 
     clear_console()
     
-    return hidden_word
+    return hidden_word.lower()
 
 
 def guess_char(word, corr_list, incorr_list):
@@ -45,11 +45,11 @@ def guess_char(word, corr_list, incorr_list):
 
             new_guess = input("\nGuess a new letter\n>>>> ")
 
-    if new_guess in word:
-        corr_list.append(new_guess)
+    if new_guess.lower() in word:
+        corr_list.append(new_guess.lower())
 
     else:
-        incorr_list.append(new_guess)
+        incorr_list.append(new_guess.lower())
 
 
 def game_screen(word, corr_list, incorr_list):
