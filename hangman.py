@@ -190,4 +190,5 @@ def main():
     print("Welcome to hangman!\n")
     options_menu()
 
-main()
+if __name__ == '__main__':
+    main()
